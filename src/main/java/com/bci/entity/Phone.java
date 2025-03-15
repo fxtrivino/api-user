@@ -18,8 +18,8 @@ public class Phone {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String number;
-    private String citycode;
-    private String contrycode;
+    private String cityCode;
+    private String countryCode;
     
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
@@ -42,20 +42,21 @@ public class Phone {
 		this.number = number;
 	}
 
-	public String getCitycode() {
-		return citycode;
+
+	public String getCityCode() {
+		return cityCode;
 	}
 
-	public void setCitycode(String citycode) {
-		this.citycode = citycode;
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
 	}
 
-	public String getContrycode() {
-		return contrycode;
+	public String getCountryCode() {
+		return countryCode;
 	}
 
-	public void setContrycode(String contrycode) {
-		this.contrycode = contrycode;
+	public void setCountryCode(String countryCode) {
+		this.countryCode = countryCode;
 	}
 
 	public Usuario getUser() {
