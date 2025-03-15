@@ -5,13 +5,19 @@ Esta es una aplicación Java / Maven / Spring Boot (version 1.0.0) para creacion
 ### Ejecutar la aplicacion localmente
 
 * Clona el repositorio
-* Asegurate de usar JDK 1.8 o superior y Maven 3.x
-* Hay algunas maneras de ejecutar la aplicacion Spring Boot localmente. Una manera es ejecutar el metodo `main` de com.bci.ApiUserApplication desde un IDE.
+* Asegurate de usar JDK 21 o superior y Maven 3.x
+* Hay algunas maneras de ejecutar la aplicacion Spring Boot localmente una manera es ejecutar el metodo `main` de com.bci.ApiUserApplication desde un IDE.
 * Alternativamente puedes usar [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) de esta manera
 
-```shell
+```
 mvn spring-boot:run
 ```
+
+* Tambien puedes ejecutarlo con el comando java directamente
+```
+java -jar target/api-user-1.0.1-SNAPSHOT.jar
+```
+
 Una vez que la aplicacion se ejecuta visualizaras algo asi:
 
 ```
