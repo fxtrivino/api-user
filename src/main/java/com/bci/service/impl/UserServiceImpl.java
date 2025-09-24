@@ -112,8 +112,7 @@ public class UserServiceImpl implements UserService{
                 existingPhones.add(phone);
             }
         }
-        
-        
+
         return userRepository.save(usuario);
 	}
 
