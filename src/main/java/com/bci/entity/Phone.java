@@ -20,53 +20,49 @@ public class Phone {
     private String number;
     private String cityCode;
     private String countryCode;
-    
+
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     @JsonBackReference
     private Usuario user;
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public String getNumber() {
-		return number;
-	}
+    public String getNumber() {
+        return number;
+    }
 
-	public void setNumber(String number) {
-		this.number = number;
-	}
+    public void setNumber(String number) {
+        this.number = number;
+    }
 
+    public String getCityCode() {
+        return cityCode;
+    }
 
-	public String getCityCode() {
-		return cityCode;
-	}
+    public void setCityCode(String cityCode) {
+        this.cityCode = cityCode;
+    }
 
-	public void setCityCode(String cityCode) {
-		this.cityCode = cityCode;
-	}
+    public String getCountryCode() {
+        return countryCode;
+    }
 
-	public String getCountryCode() {
-		return countryCode;
-	}
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
+    }
 
-	public void setCountryCode(String countryCode) {
-		this.countryCode = countryCode;
-	}
+    public Usuario getUser() {
+        return user;
+    }
 
-	public Usuario getUser() {
-		return user;
-	}
-
-	public void setUser(Usuario user) {
-		this.user = user;
-	}
-    
-    
-
+    public void setUser(Usuario user) {
+        this.user = user;
+    }
 }
